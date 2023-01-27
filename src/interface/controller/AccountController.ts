@@ -14,7 +14,6 @@ import Authorization from "../middleware/Authorization";
 const logger = new LoggerComponent();
 const accountUseCase = new AccountUseCase();
 const loginUseCase = new LoginUseCase();
-const authorization = new AuthorizationTokenMiddleware();
 
 @Controller("/account")
 export default class AccountController {

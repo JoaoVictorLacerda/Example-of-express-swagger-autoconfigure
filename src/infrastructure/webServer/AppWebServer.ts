@@ -7,7 +7,7 @@ import {
     BasePath,
     BearerTokenJWT,
     Description,
-    Expressinitializer,
+    ExpressInitializer,
     SwaggerInitializer,
     Title,
     Version
@@ -16,13 +16,13 @@ import {
 
 @SwaggerInitializer
 @BasePath("/documentation")
-@Description("Essa api é responsável pela estrutura backend do projeto RunBuddy")
-@Title("RunBuddy")
+@Description("Essa api é responsável pelo exemplo de utilização do express-swagger-autoconfigure")
+@Title("Example-of-express-swagger-autoconfigure")
 @Version("1.0.0")
 @BearerTokenJWT(true)
 export default class App {
 
-    @Expressinitializer
+    @ExpressInitializer
     private app: Express;
 
     constructor () {
